@@ -83,31 +83,31 @@
     </div>
 	
     <script>
-	  hjax.onready = function() {
-	    var ajx = hjax.get_ajax("test-2");
-		var dwr = hjax.get_drawer("draw_2");
+      hjax.onready = function() {
+        var ajx = hjax.get_ajax("test-2");
+        var dwr = hjax.get_drawer("draw_2");
 		
-		ajx.onload = function(request) {
-		  dwr.fill(request.data);
-		};
+        ajx.onload = function(request) {
+          dwr.fill(request.data);
+        };
 		
-		ajx.send();
+        ajx.send();
 		
-	    var dwr2 = hjax.get_drawer("draw_3");
+        var dwr2 = hjax.get_drawer("draw_3");
         dwr2.draw_array([
           {title: "Title 1", content: "Content 1"},
           {title: "Title 2", content: "Content 2"},
           {title: "Title 3", content: "Content 3"}
         ]);
-	  };
+      };
 	  
-	  document.getElementById("add").onclick = function() {
-	    var dwr = hjax.get_drawer("draw_0");
-		dwr.draw({
-			title: document.getElementById("title").value,
-			content: document.getElementById("content").value
-		});
-	  };
+      document.getElementById("add").onclick = function() {
+        var dwr = hjax.get_drawer("draw_0");
+        dwr.draw({
+          title: document.getElementById("title").value,
+          content: document.getElementById("content").value
+	});
+      };
     </script>
 	
   </body>
