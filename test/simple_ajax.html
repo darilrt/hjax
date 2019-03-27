@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			html, body {
+				margin: 0;
+			}
+			
+			.item {
+				float: left;
+				display: inline-block;
+				width: 80px;
+				height: 80px;
+				background-color: #eee;
+				padding: 10px;
+			}
+			
+			.item:nth-child(even) {
+				background-color: #ccc;
+			}
+			
+			draw, ajax {
+				display: none;
+			}
+		</style>
+		<script src="../src/hjax.js"></script>
+	</head>
+	<body>
+		<ajax
+			GET send
+			name="test-ajax"
+			url="test.json"
+			for="draw_1"
+			type="application/json"
+		></ajax>
+		
+		<div>
+			<draw name="draw_1">
+				<div class="item">
+					<label><value name="title"/></label>
+					<p><value name="content"/></p>
+				</div>
+			</draw>
+		</div>
+    
+	</body>
+</html>
