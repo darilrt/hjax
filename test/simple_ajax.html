@@ -29,18 +29,15 @@
   </head>
   <body>
     <!-- An example with everything we need to use this wonder. -->
-  
     <ajax GET send name="test-1" url="./json/test.json" for="draw_1" type="application/json"></ajax>
-	<ajax GET name="test-2" url="./json/test2.json" type="application/json"></ajax>
-	
-	<br>
+    <ajax GET name="test-2" url="./json/test2.json" type="application/json"></ajax>
+    <br>
     <div style="margin-left: 20px;width:100%;display: block;">
       <input id="title"></input>
       <input id="content"></input>
       <button id="add">Add</button>
     </div>
-	<br>
-	
+    <br>
     <div style="width:100%;height: 100px;display: block;">
       <div>
         <draw name="draw_0">
@@ -64,25 +61,25 @@
     </div>
 	
     <div style="float:left;width:100%;display: block;">
-		<div>
-		  <draw name="draw_2">
-			<div class="item">
-			  <label><value name="title"/></label>
-			  <p><value name="content"/></p>
-			</div>
-		  </draw>
-		</div>
+      <div>
+        <draw name="draw_2">
+          <div class="item">
+            <label><value name="title"/></label>
+            <p><value name="content"/></p>
+          </div>
+        </draw>
+      </div>
     </div>
 	
     <div style="float:left;width:100%;display: block;">
-		<div>
-		  <draw name="draw_3">
-			<div class="item">
-			  <label><value name="title"/></label>
-			  <p><value name="content"/></p>
-			</div>
-		  </draw>
-		</div>
+      <div>
+        <draw name="draw_3">
+          <div class="item">
+            <label><value name="title"/></label>
+            <p><value name="content"/></p>
+          </div>
+        </draw>
+      </div>
     </div>
 	
     <script>
