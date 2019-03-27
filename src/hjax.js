@@ -10,6 +10,10 @@ var hjax = {
 			hjax.create_drawer(draws[i]);
 		}
 		
+		for(var i in hjax.drawers) {
+			hjax.drawers[i].parent.innerHTML = "";
+		}
+		
 		var ajaxs = document.getElementsByTagName("ajax");
 		
 		for(var i=0; i < ajaxs.length; i++) {
@@ -122,6 +126,10 @@ var hjax = {
 					var target = element.getAttribute("for");
 					hjax.get_drawer(target).fill(request);
 				};
+			}
+			
+			if (element.getAttribute("send") != null) {
+				this.send();
 			}
 		};
 		
